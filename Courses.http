@@ -1,0 +1,18 @@
+@Courses_HostAddress = http://localhost:5245
+
+GET {{Courses_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Courses_HostAddress}}/api/courses
+Content-Type: application/json
+
+{
+  "name": "HTML, The Basics",
+  "code": "html_basics",
+  "duration": 4,
+  "level": "Beginner"
+}
+
+###
